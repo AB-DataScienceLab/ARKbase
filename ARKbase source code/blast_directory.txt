@@ -1,0 +1,45 @@
+blastdbs/
+├── a_baumannii_master_ids.txt
+├── all_proteins_reformatted.faa
+├── arg
+│   ├── AMR_proteins_db.phr
+│   ├── AMR_proteins_db.pin
+│   ├── AMR_proteins_db.pog
+│   ├── AMR_proteins_db.psd
+│   ├── AMR_proteins_db.psi
+│   ├── AMR_proteins_db.psq
+│   └── filtered_AMR_proteins.fa
+├── dt
+│   ├── DT_proteins_db.phr
+│   ├── DT_proteins_db.pin
+│   ├── DT_proteins_db.pog
+│   ├── DT_proteins_db.psd
+│   ├── DT_proteins_db.psi
+│   ├── DT_proteins_db.psq
+│   └── filtered_DT_proteins.fa
+├── e_coli_master_ids.txt
+├── e_faecium_master_ids.txt
+├── generate_id_lists.sh
+├── h_influenzae_master_ids.txt
+├── k_pneumoniae_master_ids.txt
+├── n_gonorrhoeae_master_ids.txt
+├── p_aeruginosa_master_ids.txt
+├── query.fasta
+├── results_VF.txt
+├── s_agalactiae_master_ids.txt
+├── s_aureus_master_ids.txt
+├── s_enterica_master_ids.txt
+├── s_flexneri_master_ids.txt
+├── s_pneumoniae_master_ids.txt
+├── s_pyogenes_master_ids.txt
+├── s_sonnei_master_ids.txt
+└── vf
+    ├── filtered_VF_proteins.fa
+    ├── VF_proteins_db.phr
+    ├── VF_proteins_db.pin
+    ├── VF_proteins_db.pog
+    ├── VF_proteins_db.psd
+    ├── VF_proteins_db.psi
+    └── VF_proteins_db.psq
+
+3 directories, 39 files

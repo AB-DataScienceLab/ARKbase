@@ -1,0 +1,146 @@
+<HTMl>
+<HEAD><br><br><center><h3><font color='brown'><b>HELP FILE FOR DOING STRUCTURAL SIMILARITY SEARCHES</b><br><br></font></h3></center></HEAD>
+<BODY>
+<ul type='A'>
+<li><font color=blue><b><u>Exact Search</u></b></font>: An exact structure search finds molecules that are equal (in size) to the query structure. (No additional fragments or heavy atoms are allowed.)</li>
+<li><font color=blue><b><u>Similarity Search</u></b></font>: Similarity is only used in database searches, and its similarity concept is based on hashed binary chemical fingerprints with Tanimoto metrics. (For a more detailed description, see the Developers Guide.) For a more sophisticated approach of similarity, we provide the Screen package.</li>
+<li><font color=blue><b><u>Perfect Search</u></b></font>: Perfect search is mainly used before database inserts to check whether the given molecule already appears in the database or not. All molecular features need to be equal here, eg. non-stereo query will only match non-stereo target, etc.</li>
+<li><font color=blue><b><u>Substructure Search</u></b></font>: Substructure search, that is, whether one molecular structure contains the other one as a substructure or not</li>
+<li><font color=blue><b><u>Superstructure Search</u></b></font>: Superstructure search is the opposite of substructure search: It searches for those target molecules which can be found in the given superstructure query. (In this case the roles of the query and target molecules are simply exchanged, so query properties should be specified on the target!)</li>
+</ul>
+<center><b>Table Search type differences</b></center>
+<p>
+<table cellspacing="0" cellpadding="5" border='2'>
+    <tr>
+        <td  align=center rowspan=2><b>Search type</b></td>
+        <td  align=center colspan=8><b>Search feature</b></td>
+    </tr>
+    <tr>
+            <td align=center>Similarity</td>
+            <td align=center>Tests if target<br>contains query</td>
+
+            <td align=center>Tests if query<br>contains target</td>
+
+            <td align=center>Full fragment<br>coverage</td>
+
+            <td align=center>Exact topology<br>matching</td>
+
+            <td align=center>Exact stereo<br>matching</td>
+
+            <td align=center>Exact atom<br>features matching</td>
+
+            <td align=center>Exact bond<br>matching</td>
+    </tr>
+    <tr>
+        <td align=center>SUBSTRUCTURE</td>
+
+        <td align=center>n/a</td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+    </tr>
+
+    <tr>
+
+        <td align=center>SUPERSTRUCTURE</td>
+
+        <td align=center>n/a</td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+    </tr>
+
+    <tr>
+
+        <td align=center>EXACT</td>
+
+        <td align=center>n/a</td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/no.png" width=24 height=24 alt=""></td>
+
+    </tr>
+
+    <tr>
+
+        <td align=center>PERFECT</td>
+
+        <td align=center>n/a</td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+    </tr>
+
+    <tr>
+
+        <td align=center>SIMILARITY</td>
+
+        <td align=center><img src="./images/yes.png" width=24 height=24 alt=""></td>
+
+        <td align=center>n/a</td>
+
+        <td align=center>n/a</td>
+
+        <td align=center>n/a</td>
+
+        <td align=center>n/a</td>
+
+        <td align=center>n/a</td>
+
+        <td align=center>n/a</td>
+
+        <td align=center>n/a</td>
+
+    </tr>
+
+</table>
+<center><A HREF="javascript:window.close()" > <input type="button" value="CLOSE"></A></center>
+</BODY>
+</HTML>

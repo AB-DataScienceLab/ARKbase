@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARKbase - Bacterial Genome Resource</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4a5568;
+        }
+
+        .logo span {
+            color: #667eea;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .search-bar {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            position: relative;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 1rem 3rem 1rem 1.5rem;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            outline: none;
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .search-btn:hover {
+            background: #5a67d8;
+        }
+
+        .main-content {
+            background: white;
+            margin-top: -50px;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .pathogens-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pathogen-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pathogen-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .pathogen-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.15);
+        }
+
+        .pathogen-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .pathogen-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .pathogen-scientific {
+            font-style: italic;
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .pathogen-description {
+            color: #4a5568;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .pathogen-stats {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .stat {
+            background: #f7fafc;
+            padding: 0.5rem;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .stat-number {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.1rem;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #718096;
+        }
+
+        .features {
+            background: #f8fafc;
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .priority-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid #e2e8f0;
+            background: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .pathogens-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">ARK<span>base</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#pathogens">Pathogens</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#downloads">Downloads</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>ARKbase</h1>
+            <p>Comprehensive Bacterial Genome Resource for Priority Pathogens</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search genomes, genes, or pathogen names..." id="searchInput">
+                <button class="search-btn" onclick="performSearch()">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-content">
+        <div class="container">
+            <h2 class="section-title">Priority Pathogens</h2>
+            
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterPathogens('all')">All</button>
+                <button class="filter-btn" onclick="filterPathogens('gram-positive')">Gram-positive</button>
+                <button class="filter-btn" onclick="filterPathogens('gram-negative')">Gram-negative</button>
+                <button class="filter-btn" onclick="filterPathogens('who-priority')">WHO Critical</button>
+            </div>
+
+            <div class="pathogens-grid" id="pathogensGrid">
+                <!-- Pathogen cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Platform Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧬</div>
+                    <h3>Genome Browser</h3>
+                    <p>Interactive visualization of complete bacterial genomes with annotation tracks</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Advanced Search</h3>
+                    <p>BLAST search, keyword search, and genomic coordinate-based queries</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Comparative Analysis</h3>
+                    <p>Tools for genome comparison, phylogenetic analysis, and synteny visualization</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>API Access</h3>
+                    <p>RESTful API for programmatic access to all genome data and annotations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ARKbase. A comprehensive bacterial genome resource platform.</p>
+        </div>
+    </footer>
+
+    <script>
+        const pathogens = [
+            {
+                name: "Mycobacterium tuberculosis",
+                scientific: "M. tuberculosis",
+                description: "Causative agent of tuberculosis, one of the leading infectious disease killers worldwide.",
+                genomes: 1247,
+                genes: 3962,
+                type: "gram-positive",
+                priority: "WHO Critical"
+            },
+            {
+                name: "Staphylococcus aureus",
+                scientific: "S. aureus",
+                description: "Major cause of skin infections, pneumonia, and sepsis with increasing antibiotic resistance.",
+                genomes: 892,
+                genes: 2685,
+                type: "gram-positive",
+                priority: "WHO High"
+            },
+            {
+                name: "Escherichia coli",
+                scientific: "E. coli",
+                description: "Versatile pathogen causing UTIs, gastroenteritis, and bloodstream infections.",
+                genomes: 2156,
+                genes: 4318,
+                type: "gram-negative",
+                priority: "WHO Critical"
+            },
+            {
+                name: "Klebsiella pneumoniae",
+                scientific: "K. pneumoniae",
+                description: "Leading cause of hospital-acquired infections with carbapenem resistance.",
+                genomes: 634,
+                genes: 5394,
+                type: "gram-negative",
+                priority: "WHO Critical"
+            },
+            {
+                name: "Pseudomonas aeruginosa",
+                scientific: "P. aeruginosa",
+                description: "Opportunistic pathogen with intrinsic antibiotic resistance mechanisms.",
+                genomes: 1089,
+                genes: 5570,
+                type: "gram-negative",
+                priority: "WHO Critical"
+            },
+            {
+                name: "Acinetobacter baumannii",
+                scientific: "A. baumannii",
+                description: "Multidrug-resistant pathogen causing severe hospital-acquired infections.",
+                genomes: 423,
+                genes: 3472,
+                type: "gram-negative",
+                priority: "WHO Critical"
+            },
+            {
+                name: "Enterococcus faecium",
+                scientific: "E. faecium",
+                description: "Vancomycin-resistant enterococcus causing serious healthcare-associated infections.",
+                genomes: 567,
+                genes: 2729,
+                type: "gram-positive",
+                priority: "WHO High"
+            },
+            {
+                name: "Salmonella enterica",
+                scientific: "S. enterica",
+                description: "Major foodborne pathogen causing gastroenteritis and typhoid fever.",
+                genomes: 1834,
+                genes: 4460,
+                type: "gram-negative",
+                priority: "WHO High"
+            },
+            {
+                name: "Neisseria gonorrhoeae",
+                scientific: "N. gonorrhoeae",
+                description: "Sexually transmitted pathogen with increasing fluoroquinolone resistance.",
+                genomes: 189,
+                genes: 2154,
+                type: "gram-negative",
+                priority: "WHO High"
+            },
+            {
+                name: "Streptococcus pneumoniae",
+                scientific: "S. pneumoniae",
+                description: "Leading cause of pneumonia, meningitis, and sepsis, especially in children.",
+                genomes: 743,
+                genes: 2124,
+                type: "gram-positive",
+                priority: "WHO Medium"
+            },
+            {
+                name: "Campylobacter jejuni",
+                scientific: "C. jejuni",
+                description: "Most common cause of bacterial gastroenteritis worldwide.",
+                genomes: 298,
+                genes: 1654,
+                type: "gram-negative",
+                priority: "WHO High"
+            },
+            {
+                name: "Helicobacter pylori",
+                scientific: "H. pylori",
+                description: "Causes gastric ulcers and is associated with gastric cancer development.",
+                genomes: 234,
+                genes: 1532,
+                type: "gram-negative",
+                priority: "WHO High"
+            },
+            {
+                name: "Clostridium difficile",
+                scientific: "C. difficile",
+                description: "Leading cause of healthcare-associated diarrhea and colitis.",
+                genomes: 387,
+                genes: 3776,
+                type: "gram-positive",
+                priority: "WHO HIGH"
+            },
+            {
+                name: "Listeria monocytogenes",
+                scientific: "L. monocytogenes",
+                description: "Foodborne pathogen causing listeriosis with high mortality rates.",
+                genomes: 445,
+                genes: 2846,
+                type: "gram-positive",
+                priority: "WHO Medium"
+            },
+            {
+                name: "Vibrio cholerae",
+                scientific: "V. cholerae",
+                description: "Causative agent of cholera, causing severe dehydrating diarrhea.",
+                genomes: 167,
+                genes: 3785,
+                type: "gram-negative",
+                priority: "WHO Medium"
+            }
+        ];
+
+        function createPathogenCard(pathogen) {
+            return `
+                <div class="pathogen-card" data-type="${pathogen.type}" data-priority="${pathogen.priority.toLowerCase().replace(' ', '-')}">
+                    <div class="priority-badge">${pathogen.priority}</div>
+                    <div class="pathogen-name">${pathogen.name}</div>
+                    <div class="pathogen-scientific">${pathogen.scientific}</div>
+                    <div class="pathogen-description">${pathogen.description}</div>
+                    <div class="pathogen-stats">
+                        <div class="stat">
+                            <div class="stat-number">${pathogen.genomes}</div>
+                            <div class="stat-label">Genomes</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">${pathogen.genes}</div>
+                            <div class="stat-label">Genes</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderPathogens() {
+            const grid = document.getElementById('pathogensGrid');
+            grid.innerHTML = pathogens.map(pathogen => createPathogenCard(pathogen)).join('');
+        }
+
+        function filterPathogens(filter) {
+            const cards = document.querySelectorAll('.pathogen-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            cards.forEach(card => {
+                if (filter === 'all') {
+                    card.style.display = 'block';
+                } else if (filter === 'who-priority') {
+                    card.style.display = card.dataset.priority === 'who-critical' ? 'block' : 'none';
+                } else {
+                    card.style.display = card.dataset.type === filter ? 'block' : 'none';
+                }
+            });
+        }
+
+        function performSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.pathogen-card');
+            
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                card.style.display = text.includes(query) ? 'block' : 'none';
+            });
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // Initialize
+        renderPathogens();
+    </script>
+</body>
+</html>

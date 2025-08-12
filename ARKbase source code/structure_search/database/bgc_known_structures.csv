@@ -1,0 +1,71 @@
+﻿pathogen_id,DRUG NAME,SMILES
+Acinetobacter baumannii,"1-nonadecene, (14Z)-1,14-nonadecadiene",CCCCCCCCCCCCCCCCCC=C
+Acinetobacter baumannii,berninamycin K,C=C(NC(=O)C(=C)NC(=O)C1=CC=C(C2=NC(C(=O)N[C@H](C(N)=O)[C@@H](C)O)=CS2)C(C2=COC(C(=C)NC(=O)C(=C)NC(=O)C3=C(C)OC(C(=C)NC(=O)[C@@H](NC(=O)C(=C)NC(=O)C4=C(C)OC(C(=O)CC)=N4)C(C)(C)O)=N3)=N2)=N1)C(N)=O
+Acinetobacter baumannii,berninamycin J,C=C(NC(=O)C(=C)NC(=O)C1=CC=C(C2=NC(C(=O)N[C@H](C(N)=O)[C@@H](C)O)=CS2)C(C2=COC(C(=C)NC(=O)C(=C)NC(=O)C3=C(C)OC(C(=C)NC(=O)[C@@H](NC(=O)C(=C)NC(=O)C4=C(C)OC(C(=O)CC)=N4)C(C)C)=N3)=N2)=N1)C(N)=O
+Acinetobacter baumannii,berninamycin A,C/C=C\1/C2=NC(=C(O2)C)C(=O)NC(=C)C(=O)N[C@H](C(=O)NC(=C)C3=NC(=C(O3)C)C(=O)NC(=C)C(=O)NC(=C)C4=NC(=CO4)C5=C(C=CC(=N5)C(=O)NC(=C)C(=O)NC(=C)C(=O)N)C6=NC(=CS6)C(=O)N[C@H](C(=O)N1)[C@@H](C)O)C(C)(C)O
+Acinetobacter baumannii,berninamycin B,C/C=C\1/C2=NC(=C(O2)C)C(=O)NC(=C)C(=O)N[C@H](C(=O)NC(=C)C3=NC(=C(O3)C)C(=O)NC(=C)C(=O)NC(=C)C4=NC(=CO4)C5=C(C=CC(=N5)C(=O)NC(=C)C(=O)NC(=C)C(=O)N)C6=NC(=CS6)C(=O)N[C@H](C(=O)N1)[C@@H](C)O)C(C)C
+Acinetobacter baumannii,mycosubtilin,CCC(C)CCCCCCCCCCC1CC(=O)NC(C(=O)NC(C(=O)N2CCCC2C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CC(=O)N)CO)CC(=O)N)CC(=O)N)CC3=CC=C(C=C3)O)CCC(=O)N)CC(=O)N
+Acinetobacter baumannii,baumannoferrin A,CCCCCCC/C=C/C(N(CCCNC(CC(C(O)=O)(O)CC(NCCC(N1C(CCC1(C(O)=O)O)=O)C(O)=O)=O)=O)O)=O
+Acinetobacter baumannii,baumannoferrin B,CCCCCCCCCC(N(CCCNC(CC(C(O)=O)(O)CC(NCCC(N1C(CCC1(C(O)=O)O)=O)C(O)=O)=O)=O)O)=O
+Acinetobacter baumannii,parabactin,C[C@H]1OC(C2=CC=CC=C2O)=N[C@@H]1C(=O)N(CCCCNC(=O)C1=C(O)C(O)=CC=C1)CCCNC(=O)C1=C(O)C(O)=CC=C1
+Acinetobacter baumannii,acinetobactin,CC1OC(=NC1C(=O)N(O)CCC1=CNC=N1)C1=CC=CC(O)=C1O
+Escherichia coli,sodorifen,C=C1[C@H](C)[C@@]2(C)C(C)=C(C)[C@](C)(C2C)[C@@H]1C
+Escherichia coli,enterobactin,C1C(C(=O)OCC(C(=O)OCC(C(=O)O1)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)C3=C(C(=CC=C3)O)O)NC(=O)C4=C(C(=CC=C4)O)O
+Escherichia coli,pseudopyronine A,CCCCCCC1=C(O)CC(CCCCC)OC1=O
+Escherichia coli,pseudopyronine B,CCCCCCCC1=CC(=O)C(O)(CCCCCC)O1
+Escherichia coli,"1,3,6,8-tetrahydroxynaphthalene",C1=C2C=C(C=C(C2=C(C=C1O)O)O)O
+Escherichia coli,APE Ec,CC1=C(O)C=CC(/C=C/C=C/C=C/C=C/C=C/C=C/C(OC)=O)=C1
+Enterococcus faecium,aborycin,CCC(C)C1C(=O)NCC(=O)NC(C(=O)NC2CSSCC(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)CNC(=O)C3CSSCC(C(=O)NC(C(=O)NCC(=O)N1)CC(C)C)NC(=O)CC(C(=O)NC(C(=O)NC(C(=O)NCC(=O)N3)C)CC4=CC=CC=C4)NC(=O)C(NC2=O)CC(=O)N)CC5=CC=C(C=C5)O)C)C(C)C)C(C)C)C(=O)NC(CC6=CC=CC=C6)C(=O)NC(CC7=CNC8=CC=CC=C87)C(=O)O)CO
+Haemophilus influenzae,pseudopyronine A,CCCCCCC1=C(O)CC(CCCCC)OC1=O
+Haemophilus influenzae,pseudopyronine B,CCCCCCCC1=CC(=O)C(O)(CCCCCC)O1
+Klebsiella pneumoniae,Sorangipyranone,CC[C@H](C)/C=C/[C@@H]1CC(=O)C(C)=C(CC[C@H](C)C(=O)O)O1
+Klebsiella pneumoniae,sodorifen,C[C@@H]1C(=C)[C@@H]([C@@]2(C([C@]1(C(=C2C)C)C)C)C)C
+Klebsiella pneumoniae,enterobactin,C1C(C(=O)OCC(C(=O)OCC(C(=O)O1)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)C3=C(C(=CC=C3)O)O)NC(=O)C4=C(C(=CC=C4)O)O
+Klebsiella pneumoniae,pseudopyronine A,CCCCCCC1=C(O)CC(CCCCC)OC1=O
+Klebsiella pneumoniae,pseudopyronine B,CCCCCCCC1=CC(=O)C(O)(CCCCCC)O1
+Klebsiella pneumoniae,yersiniabactin,C[C@@]1(CSC(=N1)C(C)(C)[C@@H]([C@@H]2CSC(N2)[C@H]3CS/C(=C/4\C=CC=CC4=O)/N3)O)C(=O)O
+Neisseria gonorrhoeae,carotenoid,C[C@H](CCCCC(C)CCC[C@@H](C)CCCC(C)CCC=C(C)C)CCC[C@H](C)CCC[C@H](C)CCCC(C)(C)O[C@@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O
+Neisseria gonorrhoeae,albonoursin,CC(C)\C=C1/NC(=O)\C(NC1=O)=C\C1=CC=CC=C1
+Pseudomonas aeruginosa,xenotetrapeptide,CC(C)[C@H]1NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC1=O)C(C)C)C(C)C)CC(C)C
+Pseudomonas aeruginosa,endophenazine A,CC(C)=CCC1=CC=CC2=NC3=CC=CC(C(O)=O)=C3N=C12
+Pseudomonas aeruginosa,endophenazine B,CN1C2=CC=CC(C(O)=O)=C2N=C2C(CC=C(C)C)=CC(=O)C=C12
+Pseudomonas aeruginosa,nonactin,C[C@@H]1C[C@H]2CC[C@H](O2)[C@@H](C(=O)O[C@H](C[C@@H]3CC[C@@H](O3)[C@H](C(=O)O[C@@H](C[C@H]4CC[C@H](O4)[C@@H](C(=O)O[C@H](C[C@@H]5CC[C@@H](O5)[C@H](C(=O)O1)C)C)C)C)C)C)C
+Pseudomonas aeruginosa,monactin,CC[C@@H]1C[C@H]2CC[C@H](O2)[C@@H](C(=O)O[C@H](C[C@@H]3CC[C@@H](O3)[C@H](C(=O)O[C@@H](C[C@H]4CC[C@H](O4)[C@@H](C(=O)O[C@H](C[C@@H]5CC[C@@H](O5)[C@H](C(=O)O1)C)C)C)C)C)C)C
+Pseudomonas aeruginosa,dinactin,CCC1CC2CCC(O2)C(C(=O)OC(CC3CCC(O3)C(C(=O)OC(CC4CCC(O4)C(C(=O)OC(CC5CCC(O5)C(C(=O)O1)C)C)C)CC)C)C)C
+Pseudomonas aeruginosa,trinactin,CC[C@@H]1C[C@H]2CC[C@H](O2)[C@@H](C(=O)O[C@H](C[C@@H]3CC[C@@H](O3)[C@H](C(=O)O[C@@H](C[C@H]4CC[C@H](O4)[C@@H](C(=O)O[C@H](C[C@@H]5CC[C@@H](O5)[C@H](C(=O)O1)C)CC)C)CC)C)C)C
+Pseudomonas aeruginosa,tetranactin,CC[C@H]1C[C@@H]2CC[C@@H](O2)[C@H](C(=O)O[C@@H](C[C@H]3CC[C@H](O3)[C@@H](C(=O)O[C@H](C[C@@H]4CC[C@@H](O4)[C@H](C(=O)O[C@@H](C[C@H]5CC[C@H](O5)[C@@H](C(=O)O1)C)CC)C)CC)C)CC)C
+Pseudomonas aeruginosa,siamycin I,CC[C@H](C)[C@H]1C(=O)N[C@H](C(=O)N[C@@H](CSSC[C@H]2C(=O)N[C@H](C(=O)N[C@H]3CC(=O)N[C@@H](CSSC[C@@H](C(=O)NCC(=O)N[C@H](C(=O)N[C@H](C(=O)N1)C)CC4=CC=C(C=C4)O)NC(=O)CNC(=O)[C@@H](NC(=O)[C@@H](NC3=O)CC5=CC=CC=C5)C)C(=O)N[C@H](C(=O)NCC(=O)N[C@H](C(=O)NCC(=O)N[C@H](C(=O)N2)CO)C(C)C)CC(C)C)CC(=O)N)C(=O)N[C@@H](CC6=CC=CC=C6)C(=O)N[C@@H](CC7=CNC8=CC=CC=C87)C(=O)O)C(C)C
+Pseudomonas aeruginosa,L-2-amino-4-methoxy-trans-3-butenoic acid,CO\C=C\[C@H](N)C(O)=O
+Pseudomonas aeruginosa,Pf-5 pyoverdine,C[C@@H]1NC(=O)[C@@H](NC(=O)[C@H](CCCCN)NC(=O)[C@@H](CCCN(O)C=O)NC(=O)[C@H](CC(=O)O)NC(=O)[C@@H]2CCNC3=C(NC(=O)CCC(=O)O)C=C4C=C(O)C(O)=CC4=[N+]32)[C@@H](C)OC(=O)[C@H](CCCCN)NC(=O)[C@@H](CCCN(O)C=O)NC(=O)[C@@H](C)NC1=O
+Pseudomonas aeruginosa,azetidomonamide A,C/C=C/C(=O)NC1=CC=C2[C@H](O)CN2C(=O)O1
+Pseudomonas aeruginosa,azetidomonamide B,CC=CC(=O)NC1=CC(=O)[C@H]2CCN12
+Pseudomonas aeruginosa,scytodecamide,C[C@H](CC)[C@@H](C(N[C@@H](CO)C(N1[C@H](C(N[C@@H](C)C(N[C@@H](CC(C)C)C(N[C@@H](CC(C)C)C(N[C@@H](C)C(N[C@@H](CO)C(N[C@@H](CC(C)C)C(N[C@H](C(N)=O)C(C)C)=O)=O)=O)=O)=O)=O)=O)CCC1)=O)=O)NC
+Pseudomonas aeruginosa,brabantamide A,CCCCCCCCCCC[C@H](CC(=O)NC(=O)/C=C/1\[C@@H]2CCCN2C(=O)O1)O[C@H]3[C@@H]([C@@H]([C@H]([C@@H](O3)C)O)O)O
+Pseudomonas aeruginosa,bicornutin A1,N[C@@H](CCCNC(N)=N)C(N[C@H](CC(C)C)C(N[C@@H](CCCNC(N)=N)C(N[C@@H](CCCNC(N)=N)C(N[C@H](CCCNC(N)=N)C(NCCCCN)=O)=O)=O)=O)=O
+Pseudomonas aeruginosa,bicornutin A2,N[C@@H](CCCNC(N)=N)C(N[C@H](CC(C)C)C(N[C@@H](CCCNC(N)=N)C(N[C@@H](CCCNC(N)=N)C(N[C@H](CCCNC(N)=N)C(NCCC1=CC=CC=C1)=O)=O)=O)=O)=O
+Pseudomonas aeruginosa,curacin A,CO[C@H](CC\C(C)=C\C=C\CC\C=C/[C@H]1CSC(=N1)[C@@H]1C[C@@H]1C)CC=C
+Streptococcus agalactiae,"1,3,6,8-tetrahydroxynaphthalene",C1=C2C=C(C=C(C2=C(C=C1O)O)O)O
+Staphylococcus aureus,staphyloferrin B,C(CC(=O)NCCNC(=O)C[C@](CC(=O)NC[C@@H](C(=O)O)N)(C(=O)O)O)C(=O)C(=O)O
+Staphylococcus aureus,aureusimine A,CC(C)C1=NC=C(NC1=O)CC2=CC=C(C=C2)O
+Staphylococcus aureus,aureusimine B,CC(C)C1=NC=C(NC1=O)CC2=CC=CC=C2
+Staphylococcus aureus,aureusimine C,CC(C)CC1=CN=C(C(=O)N1)C(C)C
+Staphylococcus aureus,staphyloferrin A,O=C(O)[C@H](NC(CC(C(O)=O)(O)CC(O)=O)=O)CCCNC(CC(C(O)=O)(O)CC(O)=O)=O
+Staphylococcus aureus,staphylopine,CC(N[C@@H](CCN[C@H](CC1=CN=C[NH]1)C(=O)O)C(=O)O)C(=O)O
+Staphylococcus aureus,carotenoid,C[C@H](CCCCC(C)CCC[C@@H](C)CCCC(C)CCC=C(C)C)CCC[C@H](C)CCC[C@H](C)CCCC(C)(C)O[C@@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O
+Salmonella enterica,sodorifen,C[C@@H]1C(=C)[C@@H]([C@@]2(C([C@]1(C(=C2C)C)C)C)C)C
+Salmonella enterica,enterobactin,C1C(C(=O)OCC(C(=O)OCC(C(=O)O1)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)C3=C(C(=CC=C3)O)O)NC(=O)C4=C(C(=CC=C4)O)O
+Salmonella enterica,pseudopyronine A,CCCCCCC1=C(O)CC(CCCCC)OC1=O
+Salmonella enterica,pseudopyronine B,CCCCCCCC1=CC(=O)C(O)(CCCCCC)O1
+Shigella flexneri,sodorifen,C=C1[C@H](C)[C@@]2(C)C(C)=C(C)[C@](C)(C2C)[C@@H]1C
+Shigella flexneri,enterobactin,C1C(C(=O)OCC(C(=O)OCC(C(=O)O1)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)C3=C(C(=CC=C3)O)O)NC(=O)C4=C(C(=CC=C4)O)O
+Shigella flexneri,trans-aconitic acid,C(/C(=C\C(=O)O)/C(=O)O)C(=O)O
+Shigella flexneri,piscibactin,C[C@@]1(CSC(=N1)C[C@@H]([C@@H]2CS[C@@H](N2)[C@H]3CSC(=N3)C4=CC=CC=C4O)O)C(=O)O
+Shigella flexneri,aerobactin,CC(=O)N(CCCC[C@@H](C(=O)O)NC(=O)CC(CC(=O)N[C@@H](CCCCN(C(=O)C)O)C(=O)O)(C(=O)O)O)O
+Streptococcus pyogenes,phenazine SA,COC1=CC=CC2=NC3=C(OC)C=CC(CC=C(C)C)=C3N=C12
+Streptococcus pyogenes,pphenazine SB,COC1=C2N=C3C=CC=C(O)C3=NC2=C(CC=C(C)C)C=C1
+Streptococcus pyogenes,phenazine SC,CC(C)=CCC/C(C)=C/COC1=CC=C(O)C2=NC3=CC=CC=C3N=C12
+Shigella sonnei,pseudopyronine A,CCCCCCC1=C(O)CC(CCCCC)OC1=O
+Shigella sonnei,pseudopyronine B,CCCCCCCC1=CC(=O)C(O)(CCCCCC)O1
+Shigella sonnei,enterobactin,C1C(C(=O)OCC(C(=O)OCC(C(=O)O1)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)C3=C(C(=CC=C3)O)O)NC(=O)C4=C(C(=CC=C4)O)O
+Shigella sonnei,sodorifen,C=C1[C@H](C)[C@@]2(C)C(C)=C(C)[C@](C)(C2C)[C@@H]1C
+Shigella sonnei,aerobactin,CC(=O)N(CCCC[C@@H](C(=O)O)NC(=O)CC(CC(=O)N[C@@H](CCCCN(C(=O)C)O)C(=O)O)(C(=O)O)O)O

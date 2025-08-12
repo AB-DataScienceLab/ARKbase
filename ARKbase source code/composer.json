@@ -1,0 +1,14 @@
+{
+    "name": "arkbase/contact-form",
+    "description": "Simple contact form using PHPMailer",
+    "authors": [
+        {
+            "name": "Rakesh Kumar",
+            "email": "rakesh4osdd@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "dompdf/dompdf": "^3.1"
+    }
+}

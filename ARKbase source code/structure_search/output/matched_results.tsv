@@ -1,0 +1,27 @@
+Match	Drug_Name	Pathogen	Tanimoto_Similarity	SMILES
+1	Cefpodoxime	Escherichia coli	1	COCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+2	Cefpodoxime	Haemophilus influenzae	1	COCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+3	Cefpodoxime	Klebsiella pneumoniae	1	COCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+4	Cefpodoxime	Neisseria gonorrhoeae	1	COCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+5	Cefpodoxime	Salmonella enterica	1	COCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+6	Cefpodoxime	Shigella flexneri	1	COCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+7	Cefpodoxime	Shigella sonnei	1	COCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+8	Cefpodoxime	Streptococcus pneumoniae	1	COCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+9	Cefotaxime	Acinetobacter baumannii	0.88059701492537	CC(=O)OCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+10	Cefotaxime	Escherichia coli	0.88059701492537	CC(=O)OCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+11	Cefotaxime	Haemophilus influenzae	0.88059701492537	CC(=O)OCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+12	Cefotaxime	Klebsiella pneumoniae	0.88059701492537	CC(=O)OCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+13	Cefotaxime	Neisseria gonorrhoeae	0.88059701492537	CC(=O)OCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+14	Cefotaxime	Salmonella enterica	0.88059701492537	CC(=O)OCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+15	Cefotaxime	Shigella flexneri	0.88059701492537	CC(=O)OCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+16	Cefotaxime	Shigella sonnei	0.88059701492537	CC(=O)OCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+17	Cefotaxime	Streptococcus agalactiae	0.88059701492537	CC(=O)OCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+18	Cefotaxime (meningitis)	Streptococcus pneumoniae	0.88059701492537	CC(=O)OCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+19	Cefotaxime (nonmeningitis)	Streptococcus pneumoniae	0.88059701492537	CC(=O)OCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+20	Cefotaxime	Streptococcus pyogenes	0.88059701492537	CC(=O)OCC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+21	Cefetamet	Escherichia coli	0.81538461538462	CC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+22	Cefetamet	Haemophilus influenzae	0.81538461538462	CC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+23	Cefetamet	Klebsiella pneumoniae	0.81538461538462	CC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+24	Cefetamet	Salmonella enterica	0.81538461538462	CC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+25	Cefetamet	Shigella flexneri	0.81538461538462	CC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O
+26	Cefetamet	Shigella sonnei	0.81538461538462	CC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\OC)/C3=CSC(=N3)N)SC1)C(=O)O

@@ -44,7 +44,7 @@ ARKbase is the largest dedicated resource for WHO bacterial priority pathogens, 
 ## Web-server Architecture
 
 The backend was built using the LAMP stack, which includes Linux (operating system), Apache (web server), MySQL (database), and PHP (server-side language). The web interface is created with HTML, CSS and JavaScript. ARKBASE runs on a Linux server where Apache (version 2.4.41) handles incoming requests and passes them to PHP (version 7.4.3) scripts and these scripts connect to the MySQL database (version 8.0.26), which stores all the ARKbase data. To make database management easier, phpMyAdmin was used as a graphical interface to organize and maintain the database.
-##  Repository Structure
+## Repository Structure
 
 This repository is organized into two main directories: `ARKbase source code/` which contains the source for the web server, and `ARKbase Analysis/` which contains the data generation and analysis pipelines for each module.
 

@@ -1,0 +1,318 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+====================================================================
+  THE MAIN FIX:
+  We now target ".page-content-wrapper" instead of the generic ".container".
+  This ensures these styles ONLY apply to the main content of your ab1.php 
+  page and will NOT conflict with the header's dropdowns.
+====================================================================
+*/
+.page-content-wrapper {
+    width: 95%;
+    max-width: 2000px;
+    margin: 20px auto; /* Added some margin for spacing */
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    
+    /* 
+      CRITICAL FIX: 
+      We establish a stacking context but keep it at a low level.
+      The header's dropdowns have a z-index of 9999, so they will 
+      always appear on top of this content block.
+    */
+    position: relative;
+    z-index: 1;
+
+    /* REMOVED: "overflow: hidden;" is what hides the dropdowns. It is gone. */
+}
+
+
+/* Header specific to the page content */
+.page-content-wrapper .header {
+    color: #2c3e50;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.page-content-wrapper .header h1 {
+    font-size: 2.8em;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.page-content-wrapper .header em {
+    font-style: italic;
+    color: #3498db;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    background: #f8f9fa;
+    border-bottom: 3px solid #e9ecef;
+    padding: 0 30px;
+    overflow-x: auto;
+    box-shadow: inset 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 18px 28px;
+    margin: 0 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6c757d;
+    border-radius: 12px 12px 0 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.tab-button:hover {
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(41, 128, 185, 0.1));
+    color: #3498db;
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+.tab-button.active {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    box-shadow: 0 -8px 25px rgba(52, 152, 219, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Content */
+.content {
+    padding: 30px;
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+    min-height: 800px;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Card Row Layout */
+.card-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Tabular Style Cards */
+.card.tabular-style {
+    padding: 15px;
+}
+
+.card.tabular-style h3 {
+    margin-bottom: 15px;
+    font-size: 2em;
+    padding-bottom: 8px;
+}
+
+.card.tabular-style .card-content {
+    padding: 0;
+}
+
+/* Full Width Cards */
+.full-width-card {
+    grid-column: 1 / -1;
+}
+
+/* Chart Container */
+.chart-container {
+    position: relative;
+    height: 350px;
+    margin-top: 15px;
+}
+
+/* Image Container */
+.image-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Circos Plot Styles */
+.circos-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.circos-zoomable {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, transform-origin 0.3s ease;
+    cursor: zoom-in;
+    transform-origin: center center;
+    max-width: 100%;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .page-content-wrapper {
+        max-width: 95%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .tabs {
+        padding: 0 15px;
+    }
+    
+    .tab-button {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+    
+    .page-content-wrapper .header h1 {
+        font-size: 2.2em;
+    }
+    
+    .page-content-wrapper .header {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+    }
+    
+    .card h3 {
+        font-size: 1.2em;
+    }
+    
+    .tabular-data td {
+        padding: 5px 0;
+        font-size: 0.9em;
+    }
+    
+    .tabular-data td:first-child {
+        width: 50%;
+    }
+}
