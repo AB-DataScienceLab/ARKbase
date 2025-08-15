@@ -1,6 +1,7 @@
 # ARKbase – Antimicrobial Resistance Knowledge Base
 
 ---
+![Landing Page](IMAGE/graphical_abstract.png)
 
 **ARKbase** is currently hosted at [ARKbase - Antimicrobial Resistance Knowledgebase](https://datascience.imtech.res.in/anshu/arkbase/)
 
@@ -14,31 +15,30 @@ ARKbase is the largest dedicated resource for WHO bacterial priority pathogens, 
 
 ## Modules of ARKbase
 
-1. Database Module: Reference and curated genomes 
+1. Database Module: Reference and Curated Genome AST
 2. Insights Module: Insights module is a composite module and is further divided into following modules as follows: 
 	* PanAMR
 		* Reference Genome
 		* Curated Genome
 	* PanVirulence
-	* Drug Targets
+	* ARG Structure
 	* PPI (Protein-Protein Interaction)
 	* HPI (Host-Pathogen Interaction)
-	* DTI (Drug-Target Interaction)
-	* Structural Annotation
+	* Drug Targets
 	* Small Molecule
 		* BGC (Biosynthetic Gene Cluster)
 		* Known Antibiotics
 		* Structure Search
+	* DTI (Drug-Target Interaction)
+	* Operons
+	* Expression Data
+	* Machine Learning Models
+	* Co-Target
 	* Genome Browser
 	* Search
 		* Search by Sequence
 		* Advanced Search
-	* Operons
-	* Antimicrobial Susceptibility
-	* Expression Data
-	* Machine Learning Models
-	* Co-Target
-3. Comparative Genomics module: Comparative sequence analysis for ARGs, Virulence factors and drug targets.
+3. Comparative Analysis Module: Comparative sequence analysis for ARGs, Virulence factors and drug targets.
 
 ---
 ## Database Architecture
