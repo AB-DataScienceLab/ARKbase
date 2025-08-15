@@ -24,7 +24,7 @@ The network centralities were computed using NetworkX, and the proteins in the *
 The proteomes of the considered WHO BPPL were clustered individually using CD-hit with identity % ≥ 0.8.  
 Proteins clustered as singletons were considered as **non-paralogous proteins**.
 
-## v) Anti-target analysis
+## v) Kmer analysis
 The reference proteome sequences of the BPPL were searched against the human proteome with a segment of eight amino acids to identify similar peptides that could match a specific fold or pocket in the host proteome.  
 This was carried out using an in-house PERL script, identifying pathogen proteins that **do not have any matching 8-mers**.
 
