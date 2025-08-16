@@ -1,8 +1,14 @@
 #!usr/bin/perl -w
+#Converting restrict result files to gff3 format
+
+
 #create an array of files ending with extension .restrict
 @files = glob("*.restrict");
 print "fasta files found (glob):\n";
-
+$sortedgff="sortedgff";
+mkdir $sortedgff;
+$resultdirectory="gff3";
+mkdir $resultdirectory;
 #for each file 
 foreach my $filename (@files) {
 	print $filename,"\n";
@@ -11,11 +17,11 @@ foreach my $filename (@files) {
 	@spl = split('\.', $filename);
 	$res=uc($spl[0].".".$spl[1]);
 	$res1=$res.".gff3";
-
+    
 
 open(FH,$filename) || die "Cannot open file";
 
-open(OUT,">split4/$res1") || die "Cannot open file" ;
+open(OUT,">$resultdirectory/$res1") || die "Cannot open file" ;
 print OUT "##gff-version 3\n";
 while ($line=<FH>)
 {
@@ -29,8 +35,10 @@ while ($line=<FH>)
 }
 
 #sort the file as per genomic coordinates
+$sortedgiff="sortedgiff";
 
- `sort -n -k4 split4/$res1 >split4/sorted/$res1`;
+
+ `sort -n -k4 $resultdirectory/$res1 >$resultdirectory/$sortedgiff/$res1`;
 close FH;
 close OUT;
 }
