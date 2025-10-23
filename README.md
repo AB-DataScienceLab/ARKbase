@@ -1,9 +1,8 @@
-# ARKbase – Antimicrobial Resistance Knowledge Base
-
+# ARKbase – Antimicrobial Resistance Knowledge Base <a href="https://creativecommons.org/licenses/by/4.0/"><img align="right" src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="License: CC BY 4.0"></a>
 ---
 ![Landing Page](IMAGE/graphical_abstract.png)
 
-**ARKbase** is currently hosted at [ARKbase - Antimicrobial Resistance Knowledgebase](https://datascience.imtech.res.in/anshu/arkbase/)
+**ARKbase** is currently hosted at [ARKbase - Antimicrobial Resistance Knowledgebase](https://datascience.imtech.res.in/anshu/arkbase/) 		
 
 ---
 
