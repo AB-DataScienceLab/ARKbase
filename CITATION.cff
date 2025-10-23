@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this database, please cite it as below."
+type: dataset
+title: "ARKbase – Antimicrobial Resistance Knowledge Base"
+authors:
+  - family-names: "Bhardwaj"
+    given-names: "Anshu"
+  - family-names: "Gambhir"
+    given-names: "Simran"
+  - family-names: "Pandey"
+    given-names: "Shweta"
+  - family-names: "Bajetha"
+    given-names: "Harsh"
+  - family-names: "Kaur"
+    given-names: "Jasleen"
+  - family-names: "Das"
+    given-names: "Ankita"
+  - family-names: "G"
+    given-names: "Pranavathiyani"
+  - family-names: "Aggrawal"
+    given-names: "Rupali"
+  - family-names: "Maity"
+    given-names: "Upasana"
+  - family-names: "Dange"
+    given-names: "Suhani"
+  - family-names: "Singh"
+    given-names: "Vipin"
+  - family-names: "Zarkar"
+    given-names: "Mayur"
+  - family-names: "Sankhdher"
+    given-names: "Raghav"
+  - family-names: "Singh"
+    given-names: "Bhupender"
+  - family-names: "Seth"
+    given-names: "Shivani"
+repository-code: "https://github.com/AB-DataScienceLab/arkbase"
+url: "https://github.com/AB-DataScienceLab/arkbase"
+license: CC-BY-4.0
+date-released: 2025-10-23
+doi: https://doi.org/10.6084/m9.figshare.30424408
+keywords:
+  - antimicrobial resistance
+  - bioinformatics
+  - knowledge base
+  - AMR
