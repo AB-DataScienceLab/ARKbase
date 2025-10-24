@@ -17,30 +17,32 @@ ARKbase is the largest dedicated resource for WHO bacterial priority pathogens, 
 
 ## Modules of ARKbase
 
-1. Database Module: Reference and Curated Genome AST
-2. Insights Module: Insights module is a composite module and is further divided into following modules as follows: 
-	* PanAMR
-		* Reference Genome
-		* Curated Genome
-	* PanVirulence
-	* ARG Structure
+1. Database module: Reference and Curated Genome AST
+2. Insights module: Insights module is a composite module and is further divided into following modules as follows: 
+	* Operons
+	* COG (Cluster of Orthologous Genes)
+	* Insertion Elements
+	* Restriction Maps
+	* Pan AMR
+	* Pan Virulence
+	* ARG (Antimicrobial Resistance Gene) Structure
 	* PPI (Protein-Protein Interaction)
 	* HPI (Host-Pathogen Interaction)
 	* Drug Targets
-	* Small Molecule
-		* BGC (Biosynthetic Gene Cluster)
+	* Evolutionary Analysis
+	* Co-Target
+	* Small Molecules
 		* Known Antibiotics
+		* BGC (Biosynthetic Gene Cluster)
 		* Structure Search
 	* DTI (Drug-Target Interaction)
-	* Operons
-	* Expression Data
 	* Machine Learning Models
-	* Co-Target
+	* Expression Data
+3. Visualization & Search modules: Interactive genome and network visualizations with integrated search tools, including:
 	* Genome Browser
-	* Search
-		* Search by Sequence
-		* Advanced Search
-3. Comparative Analysis Module: Comparative sequence analysis for ARGs, Virulence factors and drug targets.
+	* Search by Sequence
+	* Advanced Search
+4: Comparative Analysis module : Comparative sequence analysis for ARGs, Virulence factors and drug targets.
 
 ---
 ## Database Architecture
