@@ -43,7 +43,10 @@ ARKbase is the largest dedicated resource for WHO bacterial priority pathogens, 
 	* Search by Sequence
 	* Advanced Search
 4. Comparative Analysis module : Comparative sequence analysis for ARGs, Virulence factors and drug targets.
-
+5. Accessory Modules: In addition to the core modules, three additional sections are provided:
+	* Connect
+	* Data Summary
+	* FAQs & helpfile
 ---
 ## Database Architecture
 
