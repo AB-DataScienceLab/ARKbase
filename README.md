@@ -7,6 +7,9 @@
 
 **ARKbase** is currently hosted at [ARKbase - Antimicrobial Resistance Knowledgebase](https://datascience.imtech.res.in/anshu/arkbase/) 		
 
+**For detailed methodology and citation information, see our publication:**  
+ARKbase: Antimicrobial Resistance Knowledgebase 1.0, *Nucleic Acids Research* (2025). https://doi.org/10.1093/nar/gkaf1307
+
 ---
 
 ARKbase is an integrated, curated, value-added knowledge-base for AMR, with focus on WHO Bacterial Priority Pathogens. ARKbase is a dedicated AMR resource with a potential to provide novel insights towards expanding the drug-target space.
