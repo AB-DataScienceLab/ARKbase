@@ -3,8 +3,6 @@ message: "If you use this database, please cite it as below."
 type: dataset
 title: "ARKbase – Antimicrobial Resistance Knowledge Base"
 authors:
-  - family-names: "Bhardwaj"
-    given-names: "Anshu"
   - family-names: "Gambhir"
     given-names: "Simran"
   - family-names: "Pandey"
@@ -33,11 +31,13 @@ authors:
     given-names: "Bhupender"
   - family-names: "Seth"
     given-names: "Shivani"
+  - family-names: "Bhardwaj"
+    given-names: "Anshu"
 repository-code: "https://github.com/AB-DataScienceLab/arkbase"
-url: "https://github.com/AB-DataScienceLab/arkbase"
+url: "https://datascience.imtech.res.in/anshu/arkbase"
 license: CC-BY-4.0
 date-released: 2025-10-23
-doi: https://doi.org/10.6084/m9.figshare.30424408
+doi: https://doi.org/10.1093/nar/gkaf1307
 keywords:
   - antimicrobial resistance
   - bioinformatics
