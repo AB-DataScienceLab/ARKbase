@@ -7,9 +7,6 @@
 
 **ARKbase** is currently hosted at [ARKbase - Antimicrobial Resistance Knowledgebase](https://datascience.imtech.res.in/anshu/arkbase/) 		
 
-**For detailed methodology and citation information, see our publication:**  
-ARKbase: Antimicrobial Resistance Knowledgebase 1.0, *Nucleic Acids Research* (2025). https://doi.org/10.1093/nar/gkaf1307
-
 ---
 
 ARKbase is an integrated, curated, value-added knowledge-base for AMR, with focus on WHO Bacterial Priority Pathogens. ARKbase is a dedicated AMR resource with a potential to provide novel insights towards expanding the drug-target space.
@@ -88,3 +85,8 @@ This directory contains the scripts used to generate the content for each module
 *   **`{Module Name}/`**: A dedicated folder for each analysis module (e.g., `PanAMR/`, `Drug Targets/`).
     *   **`Scripts/`**: Contains all scripts required to perform the data analysis for the specific module.
     *   **`Readme.md`**: Instructions on how to run the scripts to generate the results.
+ 
+---
+## Citation
+If you use ARKbase in your research, please cite this paper:
+> Simran Gambhir, Shweta Pandey, Harsh Bajetha, Jasleen Kaur, Ankita Das, Gnanasekar Pranavathiyani, Rupali Aggarwal, Upasana Maity, Suhani Dange, Vipin Singh, Mayur Zarkar, Raghav Sankhdher, Bhupender Singh, Shivani Seth, Anshu Bhardwaj, ARKbase: Antimicrobial Resistance Knowledgebase1.0, Nucleic Acids Research, 2025;, gkaf1307, https://doi.org/10.1093/nar/gkaf1307
